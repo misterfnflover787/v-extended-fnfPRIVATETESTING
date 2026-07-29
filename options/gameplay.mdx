@@ -1,25 +1,21 @@
 ---
-title: "Gameplay Options in V-Extended"
+title: "Gameplay Options — V-Extended Friday Night Funkin Mod"
 sidebarTitle: "Gameplay"
-description: "Configure Ghost Tapping, Middlescroll, Opponent Notes Opacity, and Strumline Background to tailor your Friday Night Funkin' gameplay experience."
+description: "Configure Ghost Tapping, Middlescroll, Opponent Notes Opacity, Strumline Background, and more to tailor your V-Extended play experience."
 ---
 
 V-Extended's Gameplay options let you adjust how notes behave and how the play field looks. Open Options from the main menu (or the pause menu if you have that option enabled), then select **V-Extended** to find the settings below.
 
 <Note>
-  Options marked **PC only** do not appear in the mobile build of V-Extended.
+  Options marked **PC only** do not appear in the mobile build of V-Extended. Options marked **Mobile only** do not appear in the PC build.
 </Note>
 
 <ParamField body="Ghost Tapping" type="checkbox" default="enabled">
-  Prevents empty direction presses from counting as misses. When enabled, pressing an arrow with no note present does nothing — only hitting a note at the wrong time or missing one entirely registers as a miss. Available on PC only.
+  Prevents empty direction presses from counting as misses. When enabled, pressing an arrow with no note present does nothing — only hitting a note at the wrong time or missing one entirely registers as a miss. **PC only.**
 </ParamField>
 
-<Note>
-  Ghost Tapping is a PC-only option and will not appear on the mobile version of V-Extended.
-</Note>
-
 <ParamField body="Middlescroll" type="checkbox" default="disabled">
-  Centers the player notes and splits the opponent notes between both sides of the screen. This gives your lane a larger, more prominent position in the middle of the play field. Available on PC only.
+  Centers the player notes and splits the opponent notes between both sides of the screen. This gives your lane a larger, more prominent position in the middle of the play field. **PC only.**
 </ParamField>
 
 <ParamField body="Opponent Notes Opacity" type="number (0–100%, step 5)" default="100%">
@@ -39,7 +35,11 @@ V-Extended's Gameplay options let you adjust how notes behave and how the play f
 </ParamField>
 
 <ParamField body="Strumline Background Padding" type="number (0–40 px, step 2)" default="14 px">
-  Changes how far the lane backgrounds extend beyond the outermost arrows on each side. Increase this value to widen the background panels; set it to 0 to keep them flush with the note columns. Available on PC only.
+  Changes how far the lane backgrounds extend beyond the outermost arrows on each side. Increase this value to widen the background panels; set it to 0 to keep them flush with the note columns.
+</ParamField>
+
+<ParamField body="Alternative Note Input" type="checkbox" default="disabled">
+  Uses the full screen as four touch lanes while keeping both strumlines in the desktop layout. Changes take effect on the next song load or restart. **Mobile only.**
 </ParamField>
 
 <CardGroup cols={2}>

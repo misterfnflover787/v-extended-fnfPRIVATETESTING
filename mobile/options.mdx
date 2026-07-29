@@ -1,7 +1,7 @@
 ---
-title: "All V-Extended Mobile Options Explained"
+title: "V-Extended Mobile Options: Complete Settings Reference"
 sidebarTitle: "Options"
-description: "Complete reference for every option in V-Extended Mobile, including the exclusive Alternative Note Input and all shared HUD, score, and pause menu settings."
+description: "Complete reference for every option in V-Extended Mobile: the exclusive Alternative Note Input plus all shared HUD, score, and pause menu settings."
 ---
 
 The V-Extended Mobile options page lives inside FNF's built-in Options menu. Open Options from the main menu, select **V-Extended** from the list, and you'll find every setting documented below. All settings are saved automatically as soon as you change them — no confirm step required.
@@ -35,7 +35,7 @@ The options below behave exactly the same as their PC counterparts. They are doc
 ### Gameplay
 
 <ParamField body="Opponent Notes Opacity" type="number" default="100">
-  Controls the opacity of the opponent's note arrows, from **0%** (fully hidden) to **100%** (fully visible). Lower values reduce visual clutter on the left strumline without hiding your own notes.
+  Controls the opacity of the opponent's note arrows, from **0%** (fully hidden) to **100%** (fully visible), in steps of 5. Lower values reduce visual clutter on the left strumline without hiding your own notes.
 </ParamField>
 
 <ParamField body="Strumline Background" type="checkbox" default="false">
@@ -43,7 +43,7 @@ The options below behave exactly the same as their PC counterparts. They are doc
 </ParamField>
 
 <ParamField body="Strumline BG Opacity" type="number" default="35">
-  Sets the opacity of the strumline background panels when **Strumline Background** is enabled, from **0%** to **100%**. The default of 35% provides a subtle darkening without obscuring the stage.
+  Sets the opacity of the strumline background panels when **Strumline Background** is enabled, from **0%** to **100%**, in steps of 5. The default of 35% provides a subtle darkening without obscuring the stage.
 </ParamField>
 
 ### Time Bar
@@ -52,7 +52,7 @@ The options below behave exactly the same as their PC counterparts. They are doc
   Shows or hides the song progress bar at the bottom of the screen. Disable this if you prefer a completely clean HUD.
 </ParamField>
 
-<ParamField body="Time Bar Text" type="enum">
+<ParamField body="Time Bar Text" type="enum" default="Song Name">
   Controls the label displayed inside the time bar. Choose from:
 
   - **Song Name** — displays the track title only.
@@ -63,19 +63,19 @@ The options below behave exactly the same as their PC counterparts. They are doc
 </ParamField>
 
 <ParamField body="Time Bar Width" type="number" default="520">
-  Sets the horizontal width of the time bar in pixels. Accepted range: **320 px – 760 px**.
+  Sets the horizontal width of the time bar in pixels. Accepted range: **320 px – 760 px**, in steps of 20.
 </ParamField>
 
 <ParamField body="Time Bar Height" type="number" default="14">
-  Sets the vertical height of the time bar in pixels. Accepted range: **8 px – 24 px**.
+  Sets the vertical height of the time bar in pixels. Accepted range: **8 px – 24 px**, in steps of 2.
 </ParamField>
 
 <ParamField body="Time Bar Vertical Offset" type="number" default="8">
-  Shifts the time bar upward from the bottom edge of the screen in pixels. Accepted range: **0 px – 24 px**. Increase this value if the bar overlaps UI elements at the very bottom of your display.
+  Shifts the time bar downward from its default position in pixels. Accepted range: **0 px – 24 px**, in steps of 2. Increase this value to push the bar further down the screen.
 </ParamField>
 
 <ParamField body="Time Bar Opacity" type="number" default="72">
-  Controls the overall opacity of the time bar, from **20%** to **100%**. Values below 20% are not permitted to keep the bar legible.
+  Controls the overall opacity of the time bar, from **20%** to **100%**, in steps of 5. Values below 20% are not permitted to keep the bar legible.
 </ParamField>
 
 ### Score
@@ -89,10 +89,10 @@ The options below behave exactly the same as their PC counterparts. They are doc
 </ParamField>
 
 <ParamField body="Score Outline Size" type="number" default="2">
-  Sets the thickness of the score counter outline in pixels when **Score Counter Outline** is enabled. Accepted range: **1 px – 4 px**.
+  Sets the thickness of the score counter outline in pixels when **Score Counter Outline** is enabled. Accepted range: **1 px – 4 px**, in steps of 1.
 </ParamField>
 
-<ParamField body="Accuracy Precision" type="enum">
+<ParamField body="Accuracy Precision" type="enum" default="2 Decimals">
   Controls how many decimal places appear in your accuracy percentage. Choose from:
 
   - **No Decimals** — e.g. `98%`

@@ -1,22 +1,22 @@
 ---
-title: "Pause Menu Shortcuts in V-Extended"
+title: "Pause Menu Shortcuts — V-Extended Friday Night Funkin"
 sidebarTitle: "Pause Menu"
 description: "Add Options and Botplay shortcuts to the FNF pause screen so you can adjust settings or toggle Botplay without returning to the main menu."
 ---
 
-By default, Friday Night Funkin's pause screen only lets you resume, restart, or exit. V-Extended can inject two extra entries — an Options shortcut and a Botplay toggle — right into that menu, letting you tweak settings or flip Botplay on the fly without ever leaving your current song session.
+By default, Friday Night Funkin's pause screen only lets you resume, restart, or exit. V-Extended can inject two extra entries — an Options shortcut and a Botplay toggle — right into that menu, letting you tweak settings or flip Botplay without ever leaving your current song session.
 
-<ParamField body="Options in Pause Menu" type="boolean" default="false">
+<ParamField body="Options in Pause Menu" type="checkbox" default="disabled">
   Adds an **Options** entry to the pause menu. Selecting it navigates you to the full Options screen so you can adjust any setting mid-session. When you exit Options, the current song automatically reloads so your changes take effect immediately.
 </ParamField>
 
-<ParamField body="Botplay in Pause" type="boolean" default="false">
+<ParamField body="Botplay in Pause" type="checkbox" default="disabled">
   Adds a pause-menu button that restarts the current song with built-in Botplay enabled or disabled. The button label reflects the current Botplay state so you always know what the action will do before you select it.
 </ParamField>
 
 ## How Options in Pause Works
 
-Selecting **Options** from the pause menu saves your current progress, plays the freaky menu music, and navigates to the full Options screen — the same one accessible from the main menu. Every setting is available, so you can make any adjustments you need without returning to song select.
+Selecting **Options** from the pause menu navigates you to the full Options screen — the same one accessible from the main menu. Every setting is available, so you can make any adjustments you need without returning to song select.
 
 <Warning>
   Exiting Options after entering it from the pause menu **restarts the song from the beginning** — any progress made in that run is lost. Make sure you are comfortable losing your current attempt before opening Options mid-song.
@@ -26,19 +26,19 @@ The song reloads automatically as soon as you leave the Options screen, meaning 
 
 ## How Botplay in Pause Works
 
-When **Botplay in Pause** is enabled, the pause menu displays either **Enable Botplay** or **Disable Botplay** depending on whether Botplay is currently active. Selecting the entry immediately restarts the song from the beginning (timestamp 0) with Botplay toggled to the new state.
+When **Botplay in Pause** is enabled, the pause menu displays either **Enable Botplay** or **Disable Botplay** depending on whether Botplay is currently active. Selecting the entry immediately restarts the song from the beginning with Botplay toggled to the new state.
 
 <Note>
   Practice Mode state is preserved when you toggle Botplay through the pause menu. If you had Practice Mode active before pausing, it remains active after the song restarts.
 </Note>
 
 <Tip>
-  Enable both **Options in Pause Menu** and **Botplay in Pause** together for the fastest in-session adjustment workflow — change settings and toggle Botplay all without ever leaving the song selection screen.
+  Enable both **Options in Pause Menu** and **Botplay in Pause** together for the fastest in-session adjustment workflow — change settings and toggle Botplay all without ever going back to the main menu.
 </Tip>
 
 <CardGroup cols={2}>
   <Card title="Gameplay Options" icon="gamepad" href="/options/gameplay">
-    Configure core gameplay mechanics like scroll speed, ghost tapping, and more.
+    Configure core gameplay mechanics like Ghost Tapping, Middlescroll, and more.
   </Card>
   <Card title="Score Options" icon="star" href="/options/score">
     Customize the Detailed Score Counter, outline style, and accuracy precision.

@@ -1,5 +1,5 @@
 ---
-title: "V-Extended FAQ and Troubleshooting Guide"
+title: "V-Extended FAQ and Troubleshooting Guide for PC and Mobile"
 sidebarTitle: "FAQ"
 description: "Answers to common questions about installing and using V-Extended and V-Extended Mobile, including troubleshooting steps for missing options and save issues."
 ---
@@ -18,7 +18,7 @@ If something isn't working as expected with V-Extended, this page covers the mos
   </Accordion>
 
   <Accordion title="Which FNF version does V-Extended support?">
-    V-Extended requires a Polymod-compatible FNF V-Slice build running **Polymod API version 0.8.0 or higher**. Older or unmodified builds of FNF that don't support Polymod will not load V-Extended's scripts.
+    V-Extended requires a Polymod-compatible FNF V-Slice build running **Polymod API version 0.8.0**. Older or unmodified builds of FNF that don't support Polymod will not load V-Extended's scripts.
 
     <Tip>
       If you're unsure whether your FNF build is Polymod-compatible, check the build's release notes or look for a Mods menu on the title screen.
@@ -38,11 +38,11 @@ If something isn't working as expected with V-Extended, this page covers the mos
 
 <AccordionGroup>
   <Accordion title="Why does the song restart when I exit Options from the pause menu?">
-    This is intentional behavior. When you open the Options menu from the pause screen and make changes, V-Extended reloads the current song to apply those settings correctly. Exiting the pause menu Options will always trigger a song restart.
+    This is intentional behavior. When you open the Options menu from the pause screen and exit it, V-Extended restarts the current song from the beginning. This ensures any changes you made take effect cleanly from the start of the track.
   </Accordion>
 
   <Accordion title="Why does enabling Botplay in Pause restart my song?">
-    Toggling Botplay requires the song to restart from the beginning so that the game mode initializes correctly. This is by design — V-Extended cannot switch Botplay on or off mid-song without causing state issues.
+    Toggling Botplay from the pause menu causes the song to restart from the beginning at timestamp 0 so that the game mode initializes correctly. This is by design — V-Extended cannot switch Botplay on or off mid-song without causing state issues.
 
     <Note>
       Botplay in Pause is disabled by default. If you don't want accidental restarts, leave this option turned off.

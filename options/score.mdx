@@ -1,25 +1,25 @@
 ---
-title: "Score Counter Options in V-Extended"
+title: "Score Counter Options — V-Extended Friday Night Funkin"
 sidebarTitle: "Score"
 description: "Enable the Detailed Score Counter to see score, misses, accuracy, and rank during play, with options for outline style and accuracy decimal precision."
 ---
 
 V-Extended's Detailed Score Counter replaces FNF's default score display with a richer readout that shows your current score, miss count, accuracy percentage, and a Freeplay-style rank letter — all visible during play. You can further customize the look with an optional outline and control exactly how many decimal places appear on your accuracy percentage.
 
-<ParamField body="Detailed Score Counter" type="boolean" default="true">
+<ParamField body="Detailed Score Counter" type="checkbox" default="enabled">
   Replaces the standard score text with score, misses, accuracy, and a Freeplay-style rank letter. When enabled, the full detailed readout is shown on the HUD during gameplay. When disabled, the vanilla FNF score display is used instead.
 </ParamField>
 
-<ParamField body="Score Counter Outline" type="boolean" default="true">
+<ParamField body="Score Counter Outline" type="checkbox" default="enabled">
   Adds a black outline around every part of the detailed score counter, improving legibility against bright or busy backgrounds.
-
-  <Note>
-    This setting only has a visible effect when **Detailed Score Counter** is enabled. If the detailed counter is off, toggling the outline has no impact on the display.
-  </Note>
 </ParamField>
 
-<ParamField body="Score Outline Size" type="number" default="2">
-  Changes the thickness of the score counter outline. Accepts whole-number values between **1 px** and **4 px** in steps of 1. Higher values produce a bolder, more prominent outline.
+<Note>
+  Score Counter Outline only has a visible effect when **Detailed Score Counter** is enabled. If the detailed counter is off, toggling the outline has no impact on the display.
+</Note>
+
+<ParamField body="Score Outline Size" type="number (1–4 px, step 1)" default="2 px">
+  Changes the thickness of the score counter outline. Higher values produce a bolder, more prominent outline.
 </ParamField>
 
 <ParamField body="Accuracy Precision" type="enum" default="2 Decimals">
