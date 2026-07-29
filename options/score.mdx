@@ -1,0 +1,44 @@
+---
+title: "Score Counter Options in V-Extended"
+sidebarTitle: "Score"
+description: "Enable the Detailed Score Counter to see score, misses, accuracy, and rank during play, with options for outline style and accuracy decimal precision."
+---
+
+V-Extended's Detailed Score Counter replaces FNF's default score display with a richer readout that shows your current score, miss count, accuracy percentage, and a Freeplay-style rank letter — all visible during play. You can further customize the look with an optional outline and control exactly how many decimal places appear on your accuracy percentage.
+
+<ParamField body="Detailed Score Counter" type="boolean" default="true">
+  Replaces the standard score text with score, misses, accuracy, and a Freeplay-style rank letter. When enabled, the full detailed readout is shown on the HUD during gameplay. When disabled, the vanilla FNF score display is used instead.
+</ParamField>
+
+<ParamField body="Score Counter Outline" type="boolean" default="true">
+  Adds a black outline around every part of the detailed score counter, improving legibility against bright or busy backgrounds.
+
+  <Note>
+    This setting only has a visible effect when **Detailed Score Counter** is enabled. If the detailed counter is off, toggling the outline has no impact on the display.
+  </Note>
+</ParamField>
+
+<ParamField body="Score Outline Size" type="number" default="2">
+  Changes the thickness of the score counter outline. Accepts whole-number values between **1 px** and **4 px** in steps of 1. Higher values produce a bolder, more prominent outline.
+</ParamField>
+
+<ParamField body="Accuracy Precision" type="enum" default="2 Decimals">
+  Selects how many decimal places are shown for your accuracy percentage. Choose from three levels of detail:
+
+  - **No Decimals** — Displays accuracy as a whole number (e.g., `98%`). Best for a clean, minimal readout.
+  - **1 Decimal** — Displays one decimal place (e.g., `98.6%`). A balanced middle ground.
+  - **2 Decimals** — Displays two decimal places (e.g., `98.63%`). The most precise readout available.
+</ParamField>
+
+<Tip>
+  If you're going for high-accuracy runs, setting Accuracy Precision to **2 Decimals** gives you the most precise readout and makes it easier to spot even small improvements between attempts.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="HUD Options" icon="display" href="/options/hud">
+    Customize the heads-up display elements shown during gameplay.
+  </Card>
+  <Card title="Pause Menu" icon="pause" href="/options/pause-menu">
+    Add Options and Botplay shortcuts directly to the pause screen.
+  </Card>
+</CardGroup>

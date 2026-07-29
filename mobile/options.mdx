@@ -1,0 +1,116 @@
+---
+title: "All V-Extended Mobile Options Explained"
+sidebarTitle: "Options"
+description: "Complete reference for every option in V-Extended Mobile, including the exclusive Alternative Note Input and all shared HUD, score, and pause menu settings."
+---
+
+The V-Extended Mobile options page lives inside FNF's built-in Options menu. Open Options from the main menu, select **V-Extended** from the list, and you'll find every setting documented below. All settings are saved automatically as soon as you change them — no confirm step required.
+
+## Mobile-Exclusive
+
+These options exist only in V-Extended Mobile and have no equivalent on PC.
+
+<ParamField body="Alternative Note Input" type="checkbox" default="false">
+  When enabled, the game switches your controls scheme to **Four Lanes**, mapping the entire screen to four full-height tap regions — one per note column — while keeping both strumlines in the standard desktop layout. Your previous controls scheme is saved before the switch and restored automatically when you turn this option off. Changes take effect on the next song or after restarting the current one.
+
+  <Tip>
+    This option works best if you prefer a wider tap target than the default touch layout. Try it if you find yourself missing notes near the edges of the screen.
+  </Tip>
+</ParamField>
+
+## Shared with PC
+
+The options below behave exactly the same as their PC counterparts. They are documented here for quick reference; see [PC Options](/options/gameplay) for additional context on any of them.
+
+### Pause Menu
+
+<ParamField body="Options in Pause Menu" type="checkbox" default="false">
+  Adds a shortcut to the V-Extended options screen directly inside the in-game pause menu, so you can tweak settings mid-run without returning to the main menu.
+</ParamField>
+
+<ParamField body="Botplay in Pause" type="checkbox" default="false">
+  Adds a **Botplay** toggle to the pause menu, letting you hand control to the bot for the remainder of a song without restarting.
+</ParamField>
+
+### Gameplay
+
+<ParamField body="Opponent Notes Opacity" type="number" default="100">
+  Controls the opacity of the opponent's note arrows, from **0%** (fully hidden) to **100%** (fully visible). Lower values reduce visual clutter on the left strumline without hiding your own notes.
+</ParamField>
+
+<ParamField body="Strumline Background" type="checkbox" default="false">
+  Toggles a solid background panel behind each strumline to improve note visibility against busy or bright stage backgrounds.
+</ParamField>
+
+<ParamField body="Strumline BG Opacity" type="number" default="35">
+  Sets the opacity of the strumline background panels when **Strumline Background** is enabled, from **0%** to **100%**. The default of 35% provides a subtle darkening without obscuring the stage.
+</ParamField>
+
+### Time Bar
+
+<ParamField body="Time Bar" type="checkbox" default="true">
+  Shows or hides the song progress bar at the bottom of the screen. Disable this if you prefer a completely clean HUD.
+</ParamField>
+
+<ParamField body="Time Bar Text" type="enum">
+  Controls the label displayed inside the time bar. Choose from:
+
+  - **Song Name** — displays the track title only.
+  - **Song + Difficulty** — displays the track title followed by the current difficulty.
+  - **Time Left** — counts down from the song's total length.
+  - **Time Elapsed** — counts up from the start of the song.
+  - **Nothing** — hides the label entirely, showing only the progress fill.
+</ParamField>
+
+<ParamField body="Time Bar Width" type="number" default="520">
+  Sets the horizontal width of the time bar in pixels. Accepted range: **320 px – 760 px**.
+</ParamField>
+
+<ParamField body="Time Bar Height" type="number" default="14">
+  Sets the vertical height of the time bar in pixels. Accepted range: **8 px – 24 px**.
+</ParamField>
+
+<ParamField body="Time Bar Vertical Offset" type="number" default="8">
+  Shifts the time bar upward from the bottom edge of the screen in pixels. Accepted range: **0 px – 24 px**. Increase this value if the bar overlaps UI elements at the very bottom of your display.
+</ParamField>
+
+<ParamField body="Time Bar Opacity" type="number" default="72">
+  Controls the overall opacity of the time bar, from **20%** to **100%**. Values below 20% are not permitted to keep the bar legible.
+</ParamField>
+
+### Score
+
+<ParamField body="Detailed Score Counter" type="checkbox" default="true">
+  When enabled, the score counter breaks down your performance into individual judgement counts (Sick, Good, Bad, Shit) alongside your total score. When disabled, only the total score is shown.
+</ParamField>
+
+<ParamField body="Score Counter Outline" type="checkbox" default="true">
+  Toggles a text outline around the score counter to improve readability against light or busy backgrounds.
+</ParamField>
+
+<ParamField body="Score Outline Size" type="number" default="2">
+  Sets the thickness of the score counter outline in pixels when **Score Counter Outline** is enabled. Accepted range: **1 px – 4 px**.
+</ParamField>
+
+<ParamField body="Accuracy Precision" type="enum">
+  Controls how many decimal places appear in your accuracy percentage. Choose from:
+
+  - **No Decimals** — e.g. `98%`
+  - **1 Decimal** — e.g. `98.3%`
+  - **2 Decimals** — e.g. `98.34%`
+</ParamField>
+
+---
+
+<Note>
+  **Ghost Tapping**, **Middlescroll**, and **Strumline Background Padding** are PC-only features and do not appear in the V-Extended Mobile options menu. If you are looking for these settings, they are only accessible in the desktop version of V-Extended.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="PC Options" icon="desktop" href="/options/gameplay">
+    View the full options reference for V-Extended on PC, including Ghost Tapping, Middlescroll, and more.
+  </Card>
+  <Card title="Installation" icon="download" href="/installation">
+    Instructions for installing V-Extended Mobile on your device.
+  </Card>
+</CardGroup>

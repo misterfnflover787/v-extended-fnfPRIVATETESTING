@@ -1,0 +1,106 @@
+---
+title: "Install V-Extended on PC and Mobile"
+sidebarTitle: "Installation"
+description: "Step-by-step instructions for installing V-Extended on PC and V-Extended Mobile on Android or iOS using Friday Night Funkin' V-Slice with Polymod support."
+---
+
+V-Extended is a Polymod-based modpack for Friday Night Funkin' V-Slice, which means your copy of the game must include Polymod support before the mod can load. Two separate variants are available — **V-Extended** (v1.4.5) for PC and **V-Extended Mobile** (v1.2.1) for Android and iOS — each built against Polymod API version 0.8.0. Follow the steps for your platform below to get up and running.
+
+<Tabs>
+  <Tab title="PC">
+    <Note>
+      V-Extended requires a version of Friday Night Funkin' V-Slice that has Polymod support compiled in. Standard builds from older distributions may not include it — make sure your build is Polymod-compatible (API version 0.8.0 or later) before continuing.
+    </Note>
+
+    <Steps>
+      <Step title="Get a Polymod-enabled FNF V-Slice build">
+        Download or confirm you already have a Polymod-compatible build of Friday Night Funkin' V-Slice. You can find official releases on the official Friday Night Funkin' itch.io page or GitHub releases. If you are unsure whether your build supports Polymod, look for a **Mods** entry in the main menu — if it is missing, you will need to update your game.
+      </Step>
+
+      <Step title="Download the V-Extended PC release">
+        Head to the V-Extended releases page and download the latest PC release archive. Unzip the archive to a temporary location so you can identify the `PC_modpack` folder inside.
+      </Step>
+
+      <Step title="Open your FNF mods folder">
+        Navigate to the folder where Friday Night Funkin' is installed on your PC. Inside that folder, find or create a directory named `mods/`. This is where Polymod looks for all installed mods.
+      </Step>
+
+      <Step title="Place PC_modpack inside mods/">
+        Move the `PC_modpack` folder from the unzipped archive into the `mods/` directory you located in the previous step. When done, your folder structure should look like this:
+
+        ```
+        mods/
+        └── PC_modpack/
+            ├── _polymod_meta.json
+            └── scripts/
+                └── VExtendedOptions.hxc
+        ```
+      </Step>
+
+      <Step title="Enable V-Extended in the Mods menu">
+        Launch Friday Night Funkin', open the **Mods** menu from the main screen, and toggle **V-Extended** to enabled. Polymod will register the mod and make its content available to the game.
+      </Step>
+
+      <Step title="Confirm the Options entry appears">
+        Navigate to **Options** from the main menu. You should now see a new **V-Extended** entry in the options list. Selecting it opens the full suite of V-Extended settings.
+      </Step>
+    </Steps>
+
+    <Tip>
+      If the **V-Extended** entry does not appear in Options immediately after enabling the mod, restart the game fully and check again. A fresh launch ensures Polymod initialises all mod scripts correctly.
+    </Tip>
+  </Tab>
+
+  <Tab title="Mobile">
+    <Warning>
+      Mobile mod support depends entirely on your specific FNF V-Slice mobile build. Not all mobile distributions ship with Polymod enabled, and the location of the `mods/` folder varies between devices and builds. Check the documentation for your mobile build before proceeding.
+    </Warning>
+
+    <Steps>
+      <Step title="Get a Polymod-enabled FNF V-Slice mobile build">
+        Confirm that your mobile installation of Friday Night Funkin' V-Slice has Polymod support. Look for a **Mods** section in the game's main menu. If it is not present, you will need a different build of the game that includes Polymod before V-Extended Mobile can be used.
+      </Step>
+
+      <Step title="Download the V-Extended Mobile release">
+        Visit the V-Extended releases page and download the latest V-Extended Mobile release archive. Extract it to locate the `Mobile_modpack` folder inside.
+      </Step>
+
+      <Step title="Open your FNF mobile mods folder">
+        On your Android or iOS device, navigate to the `mods/` directory inside your FNF V-Slice mobile installation. The exact path differs depending on your device and how the game was packaged — consult your mobile build's documentation if you cannot locate it.
+      </Step>
+
+      <Step title="Place Mobile_modpack inside mods/">
+        Copy the `Mobile_modpack` folder from the extracted archive into the `mods/` directory. The resulting structure should look like this:
+
+        ```
+        mods/
+        └── Mobile_modpack/
+            ├── _polymod_meta.json
+            └── scripts/
+                └── VExtendedMobileOptions.hxc
+        ```
+      </Step>
+
+      <Step title="Enable V-Extended Mobile in the Mods menu">
+        Open Friday Night Funkin' on your device, go to the **Mods** menu, and enable **V-Extended Mobile**. Polymod will load the mod's scripts and assets on the next game session.
+      </Step>
+
+      <Step title="Confirm the Options entry appears">
+        Go to **Options** from the main menu. A new **V-Extended** page should now be listed, giving you access to all V-Extended Mobile settings.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## After Installation
+
+Once V-Extended is enabled and you have visited the Options menu at least once, all of your V-Extended settings are saved automatically by the game's built-in save system. There are no extra configuration files to edit and no manual save step required — every preference you adjust persists across sessions and game restarts without any additional setup on your part.
+
+<CardGroup cols={2}>
+  <Card title="PC Options" icon="desktop" href="/options/gameplay">
+    Explore every setting available in the V-Extended PC options menu.
+  </Card>
+  <Card title="Mobile Options" icon="mobile" href="/mobile/options">
+    Learn about the settings available in V-Extended Mobile's options menu.
+  </Card>
+</CardGroup>

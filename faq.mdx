@@ -1,0 +1,101 @@
+---
+title: "V-Extended FAQ and Troubleshooting Guide"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about installing and using V-Extended and V-Extended Mobile, including troubleshooting steps for missing options and save issues."
+---
+
+If something isn't working as expected with V-Extended, this page covers the most common questions and fixes. If your issue isn't listed here, check that your FNF build supports Polymod mods — V-Extended relies entirely on Polymod scripting to inject its settings page into the game.
+
+## Installation & Setup
+
+<AccordionGroup>
+  <Accordion title="The V-Extended page doesn't appear in Options">
+    There are a few reasons this page may not show up:
+
+    - **Mod not enabled:** Open the in-game Mods menu and confirm that V-Extended is toggled on. The mod must be active for its scripts to run.
+    - **Wrong variant installed:** Make sure you're using the correct build for your platform. The PC variant and the Mobile variant are separate releases — installing the wrong one may result in missing or broken features.
+    - **Incompatible FNF build:** V-Extended requires a Polymod-compatible FNF V-Slice build. If your copy of the game doesn't support Polymod mods, the V-Extended page will never appear regardless of your settings.
+  </Accordion>
+
+  <Accordion title="Which FNF version does V-Extended support?">
+    V-Extended requires a Polymod-compatible FNF V-Slice build running **Polymod API version 0.8.0 or higher**. Older or unmodified builds of FNF that don't support Polymod will not load V-Extended's scripts.
+
+    <Tip>
+      If you're unsure whether your FNF build is Polymod-compatible, check the build's release notes or look for a Mods menu on the title screen.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="Can I use both PC and Mobile variants at the same time?">
+    No. You should only install the variant that matches your platform. Running both the PC and Mobile variants simultaneously is untested and not supported — doing so may cause unexpected behavior, conflicts, or broken settings.
+
+    <Warning>
+      Always remove one variant before installing the other if you are switching platforms or testing builds.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Options & Features
+
+<AccordionGroup>
+  <Accordion title="Why does the song restart when I exit Options from the pause menu?">
+    This is intentional behavior. When you open the Options menu from the pause screen and make changes, V-Extended reloads the current song to apply those settings correctly. Exiting the pause menu Options will always trigger a song restart.
+  </Accordion>
+
+  <Accordion title="Why does enabling Botplay in Pause restart my song?">
+    Toggling Botplay requires the song to restart from the beginning so that the game mode initializes correctly. This is by design — V-Extended cannot switch Botplay on or off mid-song without causing state issues.
+
+    <Note>
+      Botplay in Pause is disabled by default. If you don't want accidental restarts, leave this option turned off.
+    </Note>
+  </Accordion>
+
+  <Accordion title="Alternative Note Input isn't working after I enabled it">
+    Changes to Alternative Note Input do not apply mid-song. After enabling the option, either navigate to the next song or restart the current one for the setting to take effect.
+
+    <Tip>
+      If you're in the middle of a song, pause and use the restart option to apply the change immediately.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="Ghost Tapping / Middlescroll isn't visible on my device">
+    Ghost Tapping and Middlescroll are **PC-only features**. They are intentionally excluded from V-Extended Mobile and will not appear in the options menu on mobile devices. Make sure you have the correct variant installed for your platform.
+  </Accordion>
+
+  <Accordion title="Strumline Background Padding isn't in my options">
+    Strumline Background Padding is a **PC-only option** and does not appear in V-Extended Mobile. If you're on a mobile device and looking for strumline customization, check the Strumline Background and Opacity settings, which are available on both platforms.
+  </Accordion>
+</AccordionGroup>
+
+## Save & Settings
+
+<AccordionGroup>
+  <Accordion title="My settings reset after restarting the game">
+    V-Extended saves all of its settings using FNF's built-in save system — there are no external config files. If your settings are resetting, it's most likely because the game didn't close normally before the save could flush.
+
+    **To fix this:**
+    1. Make your desired changes in the V-Extended options page.
+    2. Return to the main menu or title screen.
+    3. Close the game normally — do not force-quit or kill the process.
+
+    <Warning>
+      Force-quitting FNF (for example, using Task Manager or a hard power-off) can prevent the save from writing, causing all settings to revert to their last saved state.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="How do I reset all V-Extended settings to defaults?">
+    There is currently no one-click reset option. To restore defaults, open the V-Extended page in the Options menu and manually set each option back to its default value. Default values are listed on each individual options page in this documentation.
+
+    <Note>
+      A bulk-reset feature may be considered for a future release. For now, resetting each option individually is the only supported method.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Options Guide" icon="sliders" href="/options/gameplay">
+    Browse all available V-Extended settings and what they do.
+  </Card>
+  <Card title="Installation" icon="download" href="/installation">
+    Step-by-step instructions for installing V-Extended on PC or Mobile.
+  </Card>
+</CardGroup>

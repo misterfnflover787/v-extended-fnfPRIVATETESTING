@@ -1,72 +1,54 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "MFF Studio",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#948c94",
+    "light": "#363030",
+    "dark": "#d1d1d0"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/53e84e25-913c-4e21-858e-502cf473d663.jpg",
+    "dark": "https://media.brand.dev/53e84e25-913c-4e21-858e-502cf473d663.jpg"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation"
+            ]
+          },
+          {
+            "group": "Options Guide",
+            "pages": [
+              "options/gameplay",
+              "options/hud",
+              "options/score",
+              "options/pause-menu"
+            ]
+          },
+          {
+            "group": "Mobile",
+            "pages": [
+              "mobile/overview",
+              "mobile/options"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "changelog"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

@@ -1,0 +1,82 @@
+{
+  "projectType": "general",
+  "projectName": "V-Extended",
+  "projectDescription": "V-Extended is a fan-made modpack for Friday Night Funkin' (V-Slice) that adds a dedicated options page with gameplay customization features for both PC and mobile.",
+  "theme": "almond",
+  "primaryColor": "#948c94",
+  "lightColor": "#363030",
+  "darkColor": "#d1d1d0",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation"
+            ]
+          },
+          {
+            "group": "Options Guide",
+            "pages": [
+              "options/gameplay",
+              "options/hud",
+              "options/score",
+              "options/pause-menu"
+            ]
+          },
+          {
+            "group": "Mobile",
+            "pages": [
+              "mobile/overview",
+              "mobile/options"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "changelog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Ghost Tapping — prevents missed inputs from counting as misses",
+    "Middlescroll — centers player notes with split opponent notes (PC)",
+    "Opponent Notes Opacity — adjustable transparency for opponent side",
+    "Strumline Background — optional gray lane background with configurable opacity and padding",
+    "Time Bar — song-progress bar with selectable text modes (Song Name, Difficulty, Time Left/Elapsed, None)",
+    "Detailed Score Counter — shows score, misses, accuracy, and rank letter",
+    "Score Counter Outline — configurable black outline on the score display",
+    "Options in Pause Menu — access options without leaving the song",
+    "Botplay in Pause — toggle Botplay directly from the pause screen",
+    "Alternative Note Input (Mobile) — full-screen four-lane touch input",
+    "PC and Mobile variants with separate version tracks"
+  ],
+  "publicApiSurface": [
+    "Options page: Ghost Tapping (checkbox)",
+    "Options page: Options in Pause Menu (checkbox)",
+    "Options page: Botplay in Pause (checkbox)",
+    "Options page: Middlescroll (checkbox, PC only)",
+    "Options page: Opponent Notes Opacity (0–100%)",
+    "Options page: Strumline Background (checkbox)",
+    "Options page: Strumline BG Opacity (0–100%)",
+    "Options page: Strumline Background Padding (0–40 px)",
+    "Options page: Time Bar (checkbox)",
+    "Options page: Time Bar Text (Song Name / Song + Difficulty / Time Left / Time Elapsed / Nothing)",
+    "Options page: Time Bar Width (320–760 px)",
+    "Options page: Time Bar Height (8–24 px)",
+    "Options page: Time Bar Vertical Offset (0–24 px)",
+    "Options page: Time Bar Opacity (20–100%)",
+    "Options page: Detailed Score Counter (checkbox)",
+    "Options page: Score Counter Outline (checkbox)",
+    "Options page: Score Outline Size (1–4 px)",
+    "Options page: Accuracy Precision (No Decimals / 1 Decimal / 2 Decimals)",
+    "Mobile-only: Alternative Note Input (checkbox)"
+  ]
+}

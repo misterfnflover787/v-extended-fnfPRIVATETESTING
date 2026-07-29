@@ -1,0 +1,52 @@
+---
+title: "HUD & Time Bar Options in V-Extended"
+sidebarTitle: "HUD"
+description: "Customize the V-Extended Time Bar — toggle it on or off, choose what text it shows, and adjust its width, height, position, and opacity."
+---
+
+The Time Bar sits above the strumline and shows your progress through the current song. V-Extended gives you full control over its appearance and the information it displays — from choosing what text to show to fine-tuning its exact dimensions and transparency. Open Options from the main menu (or the pause menu if enabled), then select **V-Extended** to find these settings.
+
+<ParamField body="Time Bar" type="checkbox" default="enabled">
+  Shows the current song progress bar above the strumline. Disable this option to remove the Time Bar from the HUD entirely. All other Time Bar settings have no effect when this is turned off.
+</ParamField>
+
+<ParamField body="Time Bar Text" type="enum" default="Song Name">
+  Selects which information is displayed as text over the Time Bar. Choose from five modes depending on how much detail you want while playing.
+
+  | Mode | What it shows |
+  |---|---|
+  | Song Name | The song title |
+  | Song + Difficulty | Song title and current difficulty |
+  | Time Left | Countdown to the end of the song |
+  | Time Elapsed | Time since the song started |
+  | Nothing | Empty bar with no text overlay |
+</ParamField>
+
+<ParamField body="Time Bar Width" type="number (320–760 px, step 20)" default="520 px">
+  Changes the width of the Time Bar. Increase this value to stretch the bar across more of the screen, or decrease it for a more compact display.
+</ParamField>
+
+<ParamField body="Time Bar Height" type="number (8–24 px, step 2)" default="14 px">
+  Changes the height of the Time Bar. A taller bar is easier to read at a glance; a shorter bar stays out of the way of the play field.
+</ParamField>
+
+<ParamField body="Time Bar Vertical Offset" type="number (0–24 px, step 2)" default="8 px">
+  Moves the Time Bar downward relative to its default position. Use this to fine-tune spacing between the bar and the strumline receptors.
+</ParamField>
+
+<ParamField body="Time Bar Opacity" type="number (20–100%, step 5)" default="72%">
+  Changes the opacity of the dark background panel behind the Time Bar. Lower values make the background more transparent so the stage shows through; the minimum is 20% to keep the bar visible at all times.
+</ParamField>
+
+<Tip>
+  If you find the Time Bar distracting during intense sections, try setting **Time Bar Text** to **Nothing** to keep the progress indicator without any text overlay, or reduce **Time Bar Opacity** to blend it into the background more naturally.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="Gameplay Options" icon="gamepad" href="/options/gameplay">
+    Adjust Ghost Tapping, Middlescroll, Opponent Notes Opacity, and Strumline Background.
+  </Card>
+  <Card title="Score Options" icon="star" href="/options/score">
+    Configure the Detailed Score Counter, outlines, and accuracy precision.
+  </Card>
+</CardGroup>
